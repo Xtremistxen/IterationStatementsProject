@@ -17,7 +17,7 @@ namespace IterationStatements
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
 
-            int num = 0;
+            var num = 0;
 
 
 
@@ -66,17 +66,13 @@ namespace IterationStatements
                 // in your initializer set the value of i to 199
                 for (int i = 999; i >= 0; i--)
                 // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
-                    if (i < numbers.Count)
-                        // AND as long as i is greater than or equal to 0
-                    {
-                        Console.WriteLine(numbers[i]);
-                    }
-                
+                // AND as long as i is greater than or equal to 0
                 // Decrement i by 1
-
-            //start for loop here
+                //start for loop here
+                    if (i < numbers.Count)
             {
                 // place numbers[i] inside of the Console.WriteLine() method
+                Console.WriteLine(numbers[i]);
             }
 
             //------------End of exercise
