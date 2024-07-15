@@ -10,34 +10,41 @@ namespace IterationStatements
                 //TODO - Read each comment and complete its instruction
                 // like the example below
 
-                //Create a List called "numbers" - DONE!
+                //Create a List called "numbers" - Completed!
                 var numbers = new List<int>();
             
             //-----START HERE------------------------------------------
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
 
+            int num = 0;
+
 
 
             // Create a do-while loop and use the template below:
-
+            do
             {
                 // Increment num by 1
+                num++;
 
                 // Then add num to the collection - numbers
-                    // Hint: reference num inside of the Add method's parentheses
-                numbers.Add(/* num */);
+                // Hint: reference num inside of the Add method's parentheses
+                numbers.Add(num);
 
             } // <---- While your variable is less than 100
+            while (num < 100);
 
 
 
             // Create a while loop
+            num = 0;
             // <--- While num is less than 200
             {
                 // Increment num by 1
+                num++;
                 // Then add num to the collection numbers
-                    //HINT: copy how this was done in the do while loop
+                //HINT: copy how this was done in the do while loop
+                numbers.Add(num);
 
             }
 
@@ -57,8 +64,14 @@ namespace IterationStatements
 
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
                 // in your initializer set the value of i to 199
+                for (int i = 999; i >= 0; i--)
                 // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
-                // AND as long as i is greater than or equal to 0
+                    if (i < numbers.Count)
+                        // AND as long as i is greater than or equal to 0
+                    {
+                        Console.WriteLine(numbers[i]);
+                    }
+                
                 // Decrement i by 1
 
             //start for loop here
